@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designer & Photographer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span data-i18n="nav.logo">Portfolio</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/" class="nav-link" data-i18n="nav.home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about.html" class="nav-link" data-i18n="nav.about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+          </li>
+          <li class="nav-item language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title" data-i18n="hero.title">Creative Designer & Photographer</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Bringing your vision to life through stunning visuals and innovative design</p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-primary" data-i18n="hero.portfolio">View Portfolio</a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero.contact">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
+        <p class="section-subtitle" data-i18n="portfolio.subtitle">A selection of my recent work</p>
+        
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="photography">
+            <img src="/images/portfolio-1.jpg" alt="Portfolio Item 1" loading="lazy">
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item1.title">Nature Photography</h3>
+              <p data-i18n="portfolio.item1.desc">Landscape capture</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="design">
+            <img src="/images/portfolio-2.jpg" alt="Portfolio Item 2" loading="lazy">
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item2.title">Brand Design</h3>
+              <p data-i18n="portfolio.item2.desc">Corporate identity</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="photography">
+            <img src="/images/portfolio-3.jpg" alt="Portfolio Item 3" loading="lazy">
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item3.title">Portrait Session</h3>
+              <p data-i18n="portfolio.item3.desc">Professional headshots</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="design">
+            <img src="/images/portfolio-4.jpg" alt="Portfolio Item 4" loading="lazy">
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item4.title">Web Design</h3>
+              <p data-i18n="portfolio.item4.desc">Responsive website</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="photography">
+            <img src="/images/portfolio-5.jpg" alt="Portfolio Item 5" loading="lazy">
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item5.title">Event Photography</h3>
+              <p data-i18n="portfolio.item5.desc">Wedding moments</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="design">
+            <img src="/images/portfolio-6.jpg" alt="Portfolio Item 6" loading="lazy">
+            <div class="portfolio-overlay">
+              <h3 data-i18n="portfolio.item6.title">Print Design</h3>
+              <p data-i18n="portfolio.item6.desc">Magazine layout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Let's discuss your next project</p>
+        
+        <div class="contact-content">
+          <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name" data-i18n="contact.form.name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="nameError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone" data-i18n="contact.form.phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error-message" id="phoneError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" data-i18n="contact.form.email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" data-i18n="contact.form.message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Message</button>
+            </form>
+          </div>
+          
+          <div class="location-container">
+            <h3 data-i18n="contact.location.title">Location</h3>
+            <p data-i18n="contact.location.address">3 Pl. Rossetti, 06300 Nice, France</p>
+            <div class="map-container">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 <span data-i18n="footer.copyright">Designer & Photographer Portfolio. All rights reserved.</span></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

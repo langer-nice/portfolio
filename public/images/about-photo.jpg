@@ -1,0 +1,7 @@
+<svg width="600" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <circle cx="300" cy="200" r="80" fill="#dee2e6"/>
+  <rect x="200" y="320" width="200" height="20" fill="#dee2e6" rx="10"/>
+  <rect x="220" y="360" width="160" height="15" fill="#dee2e6" rx="7"/>
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6c757d">About Photo</text>
+</svg>
