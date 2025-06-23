@@ -1,0 +1,38 @@
+// Skills Section
+.skills {
+  padding: 5rem 0;
+  background-color: var(--background-gray);
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .skill-item {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    
+    h3 {
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+    }
+    
+    ul {
+      list-style: none;
+      
+      li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--border-color);
+        color: var(--text-light);
+        
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
